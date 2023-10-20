@@ -31,7 +31,7 @@ export function useWindowSize({ debounce = 0 }: ConfigProps = {}) {
   useEffect(() => {
     // check if we can find a canvas - if so, base size on canvas instead of window
     // since 100vh !== window.innerHeight on mobile
-    const canvasEl = document.getElementById('ScrollRig-canvas')
+    const canvasEl = document.getElementById('root')
 
     // Handler to call on window resize
     function handleResize() {

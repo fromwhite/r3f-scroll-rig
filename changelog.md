@@ -102,12 +102,12 @@ Added some properties to help support having multiple SmoothScrollbar on the pag
   - Notifies the DefaultLoadingManager that something is loading while waiting for the DOM image load.
 
 - Added global css with classes that can hide DOM elements when canvas is active
-  `import "@14islands/r3f-scroll-rig/css";`
+  `import "r3f-scroll-rig/css";`
 
 - Global export `styles` added to access CSS class names from Javascript.
 
 ```jsx
-import { styles } from '@14islands/r3f-scroll-rig'
+import { styles } from 'r3f-scroll-rig'
 
 function Component() {
   return <div className={styles.hidden}>I will be `visibility: hidden` if WebGL is supported</div>
@@ -199,7 +199,7 @@ Advanced use-cases are enabled only when setting `frameloop="demand"` - so most 
   - Renamed `fallback` property to `loadingFallback` for global Suspense fallback as R3F Canvas already has a prop with this name
 
 - examples/ folder removed
-- added new import target `@14islands/r3f-scroll-rig/powerups` with useful helpers - might become separate repo later
+- added new import target `r3f-scroll-rig/powerups` with useful helpers - might become separate repo later
 
 ## v7.0.0
 
@@ -238,7 +238,7 @@ Added `stdlib` export target with the following reusable components:
 - ParallaxScrollScene
 - StickyScrollScene
 
-E.g. `import { StickyScrollScene } from '@14islands/r3f-scroll-rig/stdlib`
+E.g. `import { StickyScrollScene } from 'r3f-scroll-rig/stdlib`
 
 ## v1.10.0
 

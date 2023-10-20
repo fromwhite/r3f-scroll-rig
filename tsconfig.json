@@ -20,7 +20,7 @@
     "jsxFragmentFactory": "",
     "incremental": true,
     "noImplicitAny": true,
-    "paths": { "@14islands/r3f-scroll-rig": ["./src/index.ts"] }
+    "paths": { "r3f-scroll-rig": ["./src/index.ts"] }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules", "dist"]

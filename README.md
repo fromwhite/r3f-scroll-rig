@@ -1,6 +1,6 @@
-# @14islands/r3f-scroll-rig
+# r3f-scroll-rig
 
-![npm](https://img.shields.io/npm/v/@14islands/r3f-scroll-rig?color=magenta&style=flat-square)
+![npm](https://img.shields.io/npm/v/r3f-scroll-rig?color=magenta&style=flat-square)
 
 Progressively enhance a React website with WebGL using `@react-three/fiber` and smooth scrolling.
 
@@ -47,7 +47,7 @@ Further reading: [Progressive Enhancement with WebGL and React](https://medium.c
 
 # Installing 💾
 
-`yarn add @14islands/r3f-scroll-rig @react-three/fiber three`
+`yarn add r3f-scroll-rig @react-three/fiber three`
 
 # Getting Started 🛫
 
@@ -59,7 +59,7 @@ Further reading: [Progressive Enhancement with WebGL and React](https://medium.c
 <summary>Next.js</summary>
 
 ```jsx
-import { GlobalCanvas, SmoothScrollbar } from '@14islands/r3f-scroll-rig'
+import { GlobalCanvas, SmoothScrollbar } from 'r3f-scroll-rig'
 
 // _app.jsx
 function App({ Component, pageProps }: AppProps) {
@@ -80,7 +80,7 @@ function App({ Component, pageProps }: AppProps) {
 
 ```jsx
 // gatsby-browser.js
-import { GlobalCanvas, SmoothScrollbar } from '@14islands/r3f-scroll-rig'
+import { GlobalCanvas, SmoothScrollbar } from 'r3f-scroll-rig'
 
 export const wrapRootElement = ({ element }) => (
   <>
@@ -98,7 +98,7 @@ export const wrapRootElement = ({ element }) => (
 This is a basic example of a component that tracks the DOM and use the canvas to render a Mesh in its place:
 
 ```jsx
-import { UseCanvas, ScrollScene } from '@14islands/r3f-scroll-rig'
+import { UseCanvas, ScrollScene } from 'r3f-scroll-rig'
 
 export const HtmlComponent = () => (
   const el = useRef()

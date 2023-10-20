@@ -1,5 +1,5 @@
 {
-  "name": "@14islands/r3f-scroll-rig",
+  "name": "r3f-scroll-rig",
   "version": "8.12.3",
   "description": "Progressively enhance any React website with WebGL using @react-three/fiber",
   "private": false,
@@ -38,7 +38,7 @@
     "build": "yarn build-default & yarn build-scrollbar & yarn build-powerups",
     "build-default": "microbundle --globals react=React,@react-three/fiber=@react-three/fiber,@juggle/resize-observer=@juggle/resize-observer,@studio-freight/lenis=@studio-freight/lenis src/index.ts",
     "build-scrollbar": "microbundle --globals react=React,@react-three/fiber=@react-three/fiber,@juggle/resize-observer=@juggle/resize-observer,@studio-freight/lenis=@studio-freight/lenis src/scrollbar/index.ts -o dist/scrollbar.js",
-    "build-powerups": "microbundle --globals react=React,@react-three/fiber=@react-three/fiber,@juggle/resize-observer=@juggle/resize-observer,@studio-freight/lenis=@studio-freight/lenis,@react-three/drei=@react-three/drei,@14islands/r3f-scroll-rig=@14islands/r3f-scroll-rig --external=@14islands/r3f-scroll-rig powerups/index.ts -o dist/powerups.js",
+    "build-powerups": "microbundle --globals react=React,@react-three/fiber=@react-three/fiber,@juggle/resize-observer=@juggle/resize-observer,@studio-freight/lenis=@studio-freight/lenis,@react-three/drei=@react-three/drei,r3f-scroll-rig=r3f-scroll-rig --external=r3f-scroll-rig powerups/index.ts -o dist/powerups.js",
     "dev": "microbundle watch"
   },
   "repository": {
@@ -76,6 +76,7 @@
     "@react-three/fiber": "^8.13.3",
     "@types/debounce": "^1.2.1",
     "@types/react": "^18.0.25",
+    "@types/three": "^0.157.2",
     "microbundle": "^0.15.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",

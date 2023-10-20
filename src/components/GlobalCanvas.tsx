@@ -64,7 +64,7 @@ const GlobalCanvasImpl = ({
     // show debug statements
     if (debug || typeof qs.debug !== 'undefined') {
       useCanvasStore.setState({ debug: true })
-      console.info('@14islands/r3f-scroll-rig@' + version)
+      console.info('r3f-scroll-rig@' + version)
     }
   }, [debug])
 
@@ -85,7 +85,7 @@ const GlobalCanvasImpl = ({
 
   return (
     <As
-      id="ScrollRig-canvas"
+      id="root"
       // use our own default camera
       camera={{
         manual: true,

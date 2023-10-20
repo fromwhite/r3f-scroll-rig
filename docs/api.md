@@ -93,7 +93,7 @@ Worth noting:
 - supports horizontal scroll, adding `horizontal: true` will create a horizontal Lenis instance and will scroll the scene along the x axis.
 
 ```jsx
-import { SmoothScrollbar } from '@14islands/r3f-scroll-rig'
+import { SmoothScrollbar } from 'r3f-scroll-rig'
 
 // _app.jsx
 function App({ Component, pageProps }: AppProps) {
@@ -129,7 +129,7 @@ If you attach a ref to the SmoothScrollbar you will recieve an imperative handle
 💡**Note:** _You can use `SmoothScrollbar` independently based on the project needs. If the project doesn't need WebGL, you can still use the scrollbar to implement smooth scrolling, and stay flexible to add Canvas later in the project if needed._
 
 ```jsx
-import { SmoothScrollbar } from '@14islands/r3f-scroll-rig/scrollbar'
+import { SmoothScrollbar } from 'r3f-scroll-rig/scrollbar'
 ```
 
 💡 _A The `scrollbar` import target excludes all `@react-three/fiber`, `three` related imports and allows you to slim down the bundle size._
@@ -274,7 +274,7 @@ _Note: this is an abstraction on top of the <a href="#usetracker">useTracker</a>
 Use this to access the scrollbar and current scroll information.
 
 ```tsx
-import { useScrollbar } from '@14islands/r3f-scroll-rig'
+import { useScrollbar } from 'r3f-scroll-rig'
 
 const {
   enabled: boolean, // True if SmoothScrollbar is enabled
@@ -297,7 +297,7 @@ const {
 💡 You can import and use `useScrollbar` in isolation from a separate `scrollbar` target. This excludes all `@react-three/fiber`, `three` related imports and allows you to slim down the bundle size.
 
 ```jsx
-import { useScrollbar } from '@14islands/r3f-scroll-rig/scrollbar'
+import { useScrollbar } from 'r3f-scroll-rig/scrollbar'
 ```
 
 ### `useScrollRig`
@@ -305,7 +305,7 @@ import { useScrollbar } from '@14islands/r3f-scroll-rig/scrollbar'
 Hook to access current scroll rig state and functions related to rendering.
 
 ```tsx
-import { useScrollRig } from '@14islands/r3f-scroll-rig'
+import { useScrollRig } from 'r3f-scroll-rig'
 
 const {
   isCanvasAvailable: boolean, // True if webgl is enabled and GlobalCanvas has been added to the page
@@ -394,7 +394,7 @@ if `dispose` is set to `false` - objects will never unmount from the canvas.
 Returns a function that can be used to update the props of the `object` at any time.
 
 ```jsx
-import { useCanvas } from '@14islands/r3f-scroll-rig';
+import { useCanvas } from 'r3f-scroll-rig';
 
 function MyMesh() {
   return (
