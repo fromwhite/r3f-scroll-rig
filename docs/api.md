@@ -89,7 +89,7 @@ Worth noting:
 - we can use `position: sticky` etc 👌
 - the component sets `pointer-events: none` on `document.documentElement` to avoid jank caused by hover states (optional, turn of using `disablePointerOnScroll={false}`)
 - the R3F event loop is used to animate scroll
-- `SmoothScrollbar` uses `@studio-freight/lenis` internally. Make sure to read through their section on [considerations](https://github.com/studio-freight/lenis#considerations) when adding `SmoothScrollbar` to your project.
+- `SmoothScrollbar` uses `lenis` internally. Make sure to read through their section on [considerations](https://github.com/darkroomengineering/lenis#considerations) when adding `SmoothScrollbar` to your project.
 - supports horizontal scroll, adding `horizontal: true` will create a horizontal Lenis instance and will scroll the scene along the x axis.
 
 ```jsx
@@ -314,7 +314,7 @@ const {
   reflow: () => void, // tigger re-calculation of elements position (called automatically on resize), () => void
   debug: boolean, // whether the GloblCanvas is in debug mode or not
   // Advanced render API
-  preloadScene: (scene, camera, layer, callback) => void, // request scene to do a preload render before next frame
+  preloadScene: ({ scene?: Scene; camera?: Camera; layer?: number }, callback) => void, // request scene to do a preload render before next frame
   requestRender: (layers?: number[]) => void, // request the global render loop to render next frame
   renderScissor: ({ gl, scene, camera, top, left, width, height, layer, autoClear, clearDepth}) => void, // renders scene with a scissor to the canvas
   renderViewport:  ({ gl, scene, camera, top, left, width, height, layer, autoClear, clearDepth}) => void, // renders a scene inside a viewport to the canvas,

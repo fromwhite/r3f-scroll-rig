@@ -24,7 +24,7 @@ Progressively enhance a React website with WebGL using `@react-three/fiber` and 
 - 📐 Can render objects in viewports. Makes it possible for each object to have a unique camera, lights, environment map, etc.
 - 🌠 Helps load responsive images from the DOM. Supports `<picture>`, `srset` and `loading="lazy"`
 - 🚀 Optimized for performance. Calls `getBoundingClientRect()` once on mount, and uses IntersectionObserver/ResizeObserver to keep track of elements.
-- 🧈 Uses [Lenis](https://github.com/studio-freight/lenis/) for accessible smooth scrolling
+- 🧈 Uses [Lenis](https://github.com/darkroomengineering/lenis) for accessible smooth scrolling
 - ♻️ 100% compatible with the @react-three ecosystem, like [Drei](https://github.com/pmndrs/drei), [react-spring](https://www.react-spring.dev/) and [react-xr](https://github.com/pmndrs/react-xr)
 
 # Introduction 📚
@@ -400,3 +400,5 @@ Please read the API docs on using [children as a render function](/docs/api.md#c
 - [Quantum Wallet](https://quantumwallet.tech/) by [14islands](https://14islands.com)
 - [Metamask Learn](https://learn.metamask.io/) by [Antinomy Studio](https://antinomy.studio)
 - [Lynxeye](https://lynxeye.com/) by [14islands](https://14islands.com)
+- [Astra Nova](https://astranova.world/) by [estudio/nk](https://thefwa.com/profiles/estudionk-r) and [@juliperoncini](https://twitter.com/juliperoncini)
+- [Axolot Games](https://www.axolotgames.com/) by [14islands](https://14islands.com)
